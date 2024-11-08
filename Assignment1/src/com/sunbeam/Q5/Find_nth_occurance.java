@@ -1,5 +1,6 @@
 package com.sunbeam.Q5;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Find_nth_occurance {
@@ -31,6 +32,7 @@ public class Find_nth_occurance {
 		Scanner sc=new Scanner(System.in);
 		
 		int arr[]= {20,10,30,59,35,20,90};
+		System.out.println("Array="+Arrays.toString(arr));
 		System.out.println("Enter element to find");
 		int num=sc.nextInt();
 		System.out.println("whice Occurance you want-");

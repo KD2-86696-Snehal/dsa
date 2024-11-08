@@ -1,5 +1,6 @@
 package com.sunbeam.Q1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LinearSearch {
@@ -9,6 +10,7 @@ public class LinearSearch {
 		Scanner sc=new Scanner(System.in);
 		
 		int arr[]= {20,10,30,59,35,20,90};
+		System.out.println("Array="+Arrays.toString(arr));
 		System.out.println("Enter element to find it's Last Ocuurace");
 		int num=sc.nextInt();
 		

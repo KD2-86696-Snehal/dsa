@@ -1,5 +1,6 @@
 package com.sunbeam.Q3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EmployeeMain {
@@ -8,6 +9,7 @@ public class EmployeeMain {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		int choice=0;
+		
 		Employee arr[]=new Employee[5];
 		arr[0]=new Employee(1,"Anil");
 		arr[1]=new Employee(2,"sunil");
@@ -15,6 +17,11 @@ public class EmployeeMain {
 		arr[3]=new Employee(4,"nita");
 		arr[4]=new Employee(5,"sham");
 		
+		System.out.println("****Employee List****");
+		for(int i=0; i<arr.length; i++)
+		{
+			System.out.println(arr[i].toString() );
+		}
 		do {
 			System.out.println("0.Exit\n1.Search Employee by Id\n2.Search Emploee by name");
 			System.out.println("Enter Your Choice");
@@ -26,14 +33,14 @@ public class EmployeeMain {
 				System.out.println("Enter Employee id to search");
 				int id=sc.nextInt();
 				
-				Employee e=SearchById(arr,new Employee(id));
+				Employee e1=SearchById(arr,new Employee(id));
 				
 				break;
 			case 2:
 				System.out.println("Enter Employee name to search");
 				String name=sc.next();
 				
-				Employee e1=SearchByName(arr,new Employee(name));
+				Employee e2=SearchByName(arr,new Employee(name));
 				
 				break;
 			case 0:
@@ -55,7 +62,7 @@ public class EmployeeMain {
 		{
 			if(employee.name.equalsIgnoreCase(arr[i].name) )
 			{
-				System.out.println("Employee fount at index= "+i);
+				System.out.println("Employee found at index= "+i);
 				return arr[i];
 			}
 			
@@ -71,7 +78,7 @@ public class EmployeeMain {
 		{
 			if(employee.empId==arr[i].empId)
 			{
-				System.out.println("Employee fount at index= "+i);
+				System.out.println("Employee found at index= "+i);
 				return arr[i];
 			}
 			

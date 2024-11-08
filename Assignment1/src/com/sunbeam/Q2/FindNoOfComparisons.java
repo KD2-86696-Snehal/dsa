@@ -1,5 +1,6 @@
 package com.sunbeam.Q2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FindNoOfComparisons {
@@ -55,6 +56,9 @@ public class FindNoOfComparisons {
 		Scanner sc=new Scanner(System.in);
 		
 		int arr[]= {20,10,30,59,35,20,90};
+		
+		System.out.println("Array="+Arrays.toString(arr));
+		
 		System.out.println("Enter element to find");
 		int num=sc.nextInt();
 		

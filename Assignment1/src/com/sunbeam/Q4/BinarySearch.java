@@ -1,5 +1,6 @@
 package com.sunbeam.Q4;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class BinarySearch {
@@ -19,12 +20,13 @@ public class BinarySearch {
 //		{
 //			arr[i]=sc.nextInt();
 //		}
+		System.out.println("Array="+Arrays.toString(arr));
 		
 		boolean isDesc=checkDescending(arr,arr.length);
 		
 		if(isDesc)
 		{
-			System.out.println("Array is sorted in Descending order");
+			System.out.println("Array is in Descending order");
 			System.out.println("Enter Element to search- ");
 			int key=sc.nextInt();
 			int index=binarySerch(arr,key);
