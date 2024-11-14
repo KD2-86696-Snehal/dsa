@@ -16,7 +16,7 @@ public class Stack {
 		top=-1;
 		
 	}
-	
+	//check is Empty
 	public boolean isEmpty()
 	{
 		return top==-1;

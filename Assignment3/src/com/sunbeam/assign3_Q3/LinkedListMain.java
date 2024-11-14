@@ -31,14 +31,14 @@ public class LinkedListMain {
 			{
 			case 1:
 				int ele=acceptElement(sc);
-				int value=acceptValue(sc);
-				l1.addAfter(ele, value);
+				int v=acceptValue(sc);
+				l1.addAfter(ele, v);
 				l1.display();
 				break;
 			case 2:
 				ele=acceptElement(sc);
-				value=acceptValue(sc);
-				l1.addBefore(ele, value);
+				v=acceptValue(sc);
+				l1.addBefore(ele, v);
 				l1.display();
 				break;
 			case 0:
